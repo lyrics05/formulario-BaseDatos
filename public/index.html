@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Base de datos</title>
+    <link rel="stylesheet" href="/public/app.css">
+</head>
+<body>
+    <div  class="contenedor">
+        <div>
+            <a class="mensaje" href="http://127.0.0.1:5500/public/mensajes.html" target="_blank"> VER MENSAJES</a>
+        </div>
+        <form action="http://localhost:4000/" id="formulario" method="post">
+            <label for="nombre">Nombre</label>
+            <input class="input" type="text" id="nombre" name="nombre" class="nombre">
+
+            <label for="correo">Correo</label>
+            <input class="input" type="text" id="correo" class="correo" name="correo">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea class="input" name="mensaje" id="mensaje" class="mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+    <script src="../client/src/fuciones.js" type="module"></script>
+</body>
+</html>
