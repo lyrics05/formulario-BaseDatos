@@ -29,7 +29,7 @@ app.get("/mensajes", (req, res) => {
 });
 
 // Rutas de la API
-app.use("/api", router);  // Prefijo para las rutas de la API
+app.use("/", router);  // Prefijo para las rutas de la API
 
 // Iniciar servidor
 app.listen(port, () => {
