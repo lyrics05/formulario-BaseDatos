@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",function(){
 })
 
 async function getMensajes(){
-   const respuesta = await fetch("http://localhost:4000/mensajes")
+   const respuesta = await fetch("https://formulario-basedatos.onrender.com/mensajes.html")
    const resultado = await respuesta.json()
    console.log(resultado)
    mostrarMensajes(resultado)
