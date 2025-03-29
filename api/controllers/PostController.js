@@ -10,6 +10,6 @@ export async function crearMensaje(req,res){
    })
 
     setTimeout(() => {
-        res.redirect("http://127.0.0.1:5500/public/mensajes.html")
+        res.redirect("https://formulario-basedatos.onrender.com/mensajes.html")
     },2000);
 }
